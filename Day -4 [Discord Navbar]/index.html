@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!--  Custon CSS In tailwinds -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                 mybrand: '#DDDD2C',
+                 primary: '#1E1F22'
+
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-gray-200">
+    <h2 class="text-mybrand text-4xl font-bold text-center bg-black p-8 mt-10" > #Day 4 of Learning Tailwind CSS</h2>
+
+    <div class="flex mt-0 ml-0 bg-primary text-white h-screen w-32 m-0 flex flex-col shadow-lg">
+        <div class="bg-gray-600 h-20 w-20  ml-4 mt-5 text-center pt-5 rounded-full hover:bg-indigo-600 hover:rounded-2xl" >
+            <i class="fa-brands fa-discord text-3xl"></i>
+        </div>
+
+        <div class="bg-gray-600 h-0.5 w-2/4 mt-3 ml-6"></div>
+
+        <!-- User -->
+
+        <div data-te-toggle="tooltip"
+        title="Your Account"  class="cursor-pointer inline-block rounded bg-gray-600 h-20 w-20  ml-4 mt-5 text-center pt-5 rounded-full hover:bg-green-600 hover:rounded-2xl text-green-500 hover:text-white transition-all duration-75 ease-linear " >
+           
+            <i class="fa-solid fa-user text-3xl "></i>
+        </div>
+
+
+        <div data-te-toggle="tooltip"
+        title="Add a server" class="cursor-pointer bg-gray-600 h-20 w-20  ml-4 mt-5 text-center pt-5 rounded-full hover:bg-green-600 hover:rounded-2xl text-green-500 hover:text-white transition-all duration-75 ease-linear" >
+           
+        <i class="fa-solid fa-plus text-3xl"></i>
+        
+        
+
+        </div>
+
+        <!-- Navigation -->
+
+
+        <div data-te-toggle="tooltip"
+        title="Explore Public server" class="cursor-pointer dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 bg-gray-600 h-20 w-20  ml-4 mt-5 text-center pt-5 rounded-full hover:bg-green-600 hover:rounded-2xl text-green-500 hover:text-white transition-all duration-75 ease-linear" >
+           
+        
+        <i class="fa-sharp fa-solid fa-compass text-3xl "></i>
+        <div class="tooltip-arrow" data-popper-arrow></div>
+
+         </div>
+
+      
+
+
+    <div class="bg-gray-600 h-0.5 w-2/4 mt-5 ml-6"></div>
+
+    <div data-te-toggle="tooltip"
+    title="Downloead Apps" class="cursor-pointer bg-gray-600 h-20 w-20  ml-4 mt-4 text-center pt-5 rounded-full text-green-500 hover:bg-green-600 hover:rounded-2xl hover:text-white" >
+           
+        
+        
+       
+      <span class="material-symbols-outlined text-3xl">
+        download
+        </span>
+
+         </div>
+
+
+
+
+
+
+
+        
+
+
+        
+    </div>
+
+
+    
+</body>
+</html>
