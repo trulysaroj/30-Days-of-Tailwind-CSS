@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5_Netflix Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--  Custon CSS In tailwinds -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                 mybrand: '#DDDD2C',
+                 primary: '#1E1F22'
+
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body class="" style="background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/83e8c151-107d-4e8f-b95a-d2ba99d49bb9/7b082512-a6eb-4728-a8ad-012ab1ceb950/NP-en-20230213-popsignuptwoweeks-perspective_alpha_website_medium.jpg)">
+    <div class="z-10 absolute bg-black w-full h-full bg-opacity-60" >
+
+    </div>
+    <h2 class="z-20 relative text-mybrand text-4xl font-bold text-center bg-black p-8 mt-1" > #Day 5 of Learning Tailwind CSS</h2>
+
+  <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" class="z-50 absolute w-60 h-40" alt="netflixlogo">
+
+  <div class="flex justify-center mt-10">
+    <form action="#" class="z-40 relative bg-black bg-opacity-70 h-90 w-2/6 py-16 px-16">
+        <h1 class="z-90 text-white font-medium text-3xl">Sign In</h1>
+
+        <input class ="w-full px-3 py-4 mt-7 bg-neutral-600 rounded"	 type="email" placeholder="Email or Phone Number">
+
+        <input class ="w-full px-3 py-4 mt-5 bg-neutral-600 rounded"	 type="password" placeholder="Password">
+
+        <input class ="bg-red-600 w-full px-3 py-4 mt-9 rounded cursor-pointer text-white font-bold" type="Submit" value="Sign In" >
+        <div class="flex justify-between mt-3 text-sm">
+            <div>
+            <input type="checkbox"> <label for="remember" class="text-white">Remember Me</label>
+            </div>
+
+            <div>
+                <p class="text-white cursor-pointer hover:underline-offset-4">Need Help?</p>
+            </div>
+        </div>
+
+        <div class="text-white text-sm mt-8">
+            <p>New to Netflix? <span class="font-bold text-base px-2">Sign  up Now</span></p>
+        </div>
+
+
+        <div class="text-white text-xs mt-7">
+
+         This page is protected by Google reCAPTCHA to ensure <br>
+           you're not a bot. <a href="#" class="text-blue-700 font-bold">Learn more.</a>
+              
+        </div>
+
+
+    </form>
+  </div>
+</body>
+</html
