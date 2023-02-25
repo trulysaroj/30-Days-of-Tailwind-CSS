@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!--  Custon CSS In tailwinds -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                 mybrand: '#DDDD2C',
+                 primary: '#1E1F22'
+
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-gray-200 flex justify-center items-center min-h-screen  bg-center bg-no-repeat bg-cover" style="background-image: url(https://wallpapers.com/images/hd/mountain-and-moon-vector-art-m5jvh1zdjvav6tw5.jpg);">
+    <header class="fixed w-full top-0 left-0 font-sans py-7 px-24  flex justify-between items-center z-99">
+        <h2 class="text-3xl font-bold text-white select-none">tailwindcss</h2>
+
+        <nav class="navigation relative text-lg font-normal text-white">
+            <a class="ml-10 hover:underline decoration-1 duration-100" href="#">Home</a>
+            <a class="ml-10 hover:underline decoration-1 duration-100"  href="#">About</a>
+            <a class="ml-10 hover:underline decoration-1 duration-100" href="#">Service</a>
+            <a class="ml-10 hover:underline decoration-1 duration-100" href="#">Contact</a>
+
+            <button class="py-1 px-5 ml-10 bg-transparent border border-white rounded-md text-lg font-medium hover:bg-white hover:text-slate-900 duration-100">Login</button>
+
+
+
+        </nav>
+    </header>
+
+    <!-- Fomr Start Here -->
+
+    <div class="container flex flex-col  justify-center  items-center relative w-80 h-96 bg-transparent border-2 border-gray-200 rounded-lg backdrop-blur-md shadow-md shadow-slate-200">
+      <div>
+        <h2 class="text-center text-white text-2xl font-medium mt-9">Login</h2>
+        <form action="#" class="w-full p-10">
+          <div class="mt-6">
+            <span class="icon"> <i class="fa-solid fa-envelope absolute -mt-1 right-12 text-slate-900"></i></span>
+          <input class="relative w-full border-b-2 border-slate-900 bg-transparent outline-0" type="email" required>
+          <label class="absolute left-11 -mt-1 text-white">Email</label>
+
+          </div>
+
+          <div class="mt-9">
+            <span class="icon">  <i class="fa-solid fa-lock absolute -mt-1 right-12 text-slate-900"></i></span>
+          <input class=" relative w-full h-full border-b-2 border-slate-900 bg-transparent outline-0" type="password" required>
+          <label class="absolute left-11 -mt-1 text-white">Password</label>
+
+          </div>
+
+          <div class="remember mt-4 text-xs text-white font-thin">
+            <label for="#"> <input type="checkbox" class="accent-slate-900"> Remember me</label>
+
+            <a href="#" class="ml-12">Forget Password</a>
+          </div>
+
+          <button type="submit" class="w-full  py-3 mt-11 bg-slate-900 text-white font-bold rounded-md hover:bg-white  hover:text-black"> Login</button>
+          
+          <div class="mt-4 text-xs text-white font-light ml-0.5">
+            <p>Don't have account?
+              <a href="#" class="ml-0.5">Register Now</a>
+            </p>
+          </div>
+
+          
+        </form>
+      </div>
+    </div>
+
+    
+    <footer>
+      <p>Made with ❤️ by:  <a href="https://twitter.com/trulysaroj">@trulysaroj</a> </p> 
+  </footer>
+
+
+    <!-- <h2 class="relative text-mybrand text-4xl font-bold text-center bg-black p-5 mt-96 opacity-40" > #Day 8 of Learning Tailwind CSS</h2> -->
+
+    
+</body>
+</html>
