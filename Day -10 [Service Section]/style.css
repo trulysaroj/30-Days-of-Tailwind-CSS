@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+h1::after {
+    content: '';
+    background: #9333EA;
+    width: 180px;
+    height: 5px;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translatex(-50%);
+    margin-left: 40px;
+    
+
+}
+
+
+.Service:hover {
+    background-color: #9333EA;
+    color: #fff;
+    border-radius: 20px;
+    
+}
+
+.Service:hover span {
+    color: #fff;
+}
