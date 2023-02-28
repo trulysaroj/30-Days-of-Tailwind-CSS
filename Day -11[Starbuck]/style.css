@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.text-box {
+    max-width: 600px;
+}
+
+
+.image-box {
+    width: 600px;
+}
+
+.image-box img {
+    max-width: 350px;
+}
+
+
+.thumb {
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    display: flex;
+    transition: 0.5s;
+}
+
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.thumb img {
+    max-width: 60px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+
+.circle {
+    clip-path: circle(600px at right 800px);
+}

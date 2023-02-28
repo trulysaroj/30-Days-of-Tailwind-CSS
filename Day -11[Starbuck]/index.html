@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <!--  Custon CSS In tailwinds -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                 mybrand: '#DDDD2C',
+                 primary: '#1E1F22'
+
+              }
+            }
+          }
+        }
+      </script>
+
+
+</head>
+<body>
+    <section class="relative w-full h-screen p-24 flex flex-row justify-between items-center">
+        <div class="circle absolute top-0 left-0 w-full h-full bg-green-800 z-9">
+
+        </div>
+        <header class="absolute top-0 left-0 w-full py-2.5 px-24 flex justify-between items-center">
+            <a href="#" class="logo"> 
+                <img class="relative w-20 mt-2" src="Images/logo.png" alt="logo">
+            </a>
+
+              <nav>
+                    <a class="px-5 text-lg hover:underline underline-offset-8 decoration-2 decoration-green-800 duration-100" href="#">Home</a>
+                    <a class="px-5 text-lg hover:underline underline-offset-8 decoration-2 decoration-green-800 duration-100" href="#">Menu</a>
+                    <a class="px-5 text-lg hover:underline underline-offset-8 decoration-2 decoration-green-800 duration-100" href="#">Offer</a>
+                    <a class="px-5 text-lg hover:underline underline-offset-8 decoration-2 decoration-green-800 duration-100" href="#">Contact</a>
+
+              </nav>
+               
+                  
+            
+        </header>
+
+        <div class="contain relative w-full flex jusitfy-between items-center">
+            <div class="text-box">
+                <h2 class="text-4xl font-extrabold text-zinc-800 leading-snug">
+                    Experience the Rich Flavor <br> and Warmth of <span class="text-green-800">Starbucks Coffee. </span> 
+                </h2>
+                <p class="text-base mt-5 mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus enim ut enim bibendum, vitae consequat leo hendrerit. Nulla facilisi. Pellentesque non venenatis mi. Aliquam luctus tortor sit amet metus faucibus dapibus.
+    
+                </p>
+                
+                <a class="bg-green-800 text-white py-3 px-4 rounded-lg" href="#">Explore More</a> <a  class="ml-3 border-2 border-green-800 text-green-800 font-bold py-3 px-8 rounded-lg hover:bg-green-800 hover:text-white" href="#">Guide</a>
+
+            </div>
+           
+
+            <div class="image-box flex justify-end mt-20">
+                <img class="starbucks" src="Images/img1.png" alt="">
+            </div>
+
+        </div>
+
+        <ul class="thumb absolute -ml-10">
+            <li><img src="Images/thumb1.png"  onclick="imgSlider('Images/img1.png');changeCircleColor('#166534')" ></li>
+            <li><img src="Images/thumb2.png"  onclick="imgSlider('Images/img2.png');changeCircleColor('#EA7A96')" ></li>
+            <li><img src="Images/thumb3.png"  onclick="imgSlider('Images/img3.png');changeCircleColor('#F3609A')" ></li>
+        </ul>
+
+
+        <ul class="social -mr-16 text-2xl text-white z-10">
+            <li> <a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram mt-3"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter mt-3"></i></a></li>
+        </ul>
+
+        
+    </section>
+
+    
+
+    <script type="text/javascript">
+        //  function 
+        function imgSlider(anything) {
+        document.querySelector('.starbucks').src = anything;
+
+
+        // Function 
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+
+            
+        }
+
+}
+
+    </script>
+
+
+    
+</body>
+</html>
