@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.logo {
+    cursor: default;
+    font-family: 'Righteous', cursive;
+
+
+}
+
+/* header {
+    box-shadow: 1px 0 6px rgba(128, 128, 128, 0.719);
+
+} */
+nav a:active {
+    color: #F59E0B;
+
+}
+
+.home-content h1, h3, p {
+    font-family: 'Righteous', cursive;
+}
+
+.social a:hover {
+    background-color: #fff;
+    /* box-shadow: 0 0 1rem #F59E0B; */
+    color: #3F3F46;
+
+}
+
+
+.section-title, .subtitle, .Service h2{
+    font-family: 'Righteous', cursive;
+
+
+}
+
+
+#contact {
+    margin-top: 30%;
+}
+
+.social {
+    margin-top: 45%;
+
+}
+
+.Service:hover {
+    cursor: pointer;
+}
+
+
+.project-box {
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.project-box:hover .layer {
+    transform: translateY(0);
+
+
+}
+
+
+.project-box img {
+    transform: 0.5s ease;
+
+}
+
+
+ .project-box, img:hover {
+    /* transform: scale(1.1); */
+
+} 
+
+
+.project-box .layer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #facc15ce;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    transform: translateY(70%);
+    transform: 0.25s ease
+
+}
+
+.project-box:hover .layer {
+    transform: translateY(0);
+
+
+
+}
+
+
+.layer h4 {
+    font-family: 'Righteous', cursive;
+   
+}
+
+
+.layer p {
+    margin: 1rem 0 1rem
+}
+
+.layer a {
+    display: inline-flex;
+    background: #fff;
+    padding: 10px;
+    border-radius: 15px;
+
+}
