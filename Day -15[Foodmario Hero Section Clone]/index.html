@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodMario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!--  Custon CSS In tailwinds -->
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                 main: '#F15D22',
+                
+
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="hero relative  w-full  h-screen">
+        <header class="absolute w-full top-0  h-24 px-20 py-0 left-0  flex flex-row justify-between shadow-md items-center">
+            <div class="logo">
+                <img class="w-28" src="logo.png" alt="">
+            </div>
+
+           
+    
+
+                <nav class="nav-link flex font-medium items-center gap-5">
+                    <a class="bg-zinc-800 font-medium text-white rounded-md px-4 py-2" href="#">Download Customer App</a>
+                    <a class="bg-main text-white font-medium rounded-md px-4 mr-5 py-2" href="#">Download Cook App</a>
+                    <a  href="#">About Us</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Blog</a>
+
+                </nav>
+
+        </header>
+
+
+        <!-- About  -->
+        <section class="about absolute flex  px-20 pr-0 mt-36">
+            <div class="content w-2/4 mt-10" >
+                <h1 class="text-3xl font-bold text-zinc-800">About FoodMario</h1>
+
+                <p class="mt-5 italic font-normal text-zinc-800 ">Foodmario is Nepal’s first and only platform that connects home chefs with customers all over Kathmandu Valley. The chefs who use Foodmario’s services have been thoroughly vetted by our exacting team for hygiene, quality, taste and consistency. Ordering healthy, home-cooked fare from Foodmario chefs is as easy as scrolling through our app, clicking on the fare of your choice and proceeding to check out.</p>
+
+              
+                <p class="mt-4 mb-12 italic font-normal text-zinc-800 ">As of early 2019, we have connected hundreds of home chefs with customers and delivered more than 100,000 orders. And by the end of 2019, we hope to work with more than 100 home chefs. We also envision replicating the Foodmario model in major cities across Nepal & other countries.</p>
+                <a class=" text-white text-2xl rounded-md px-4 py-3 bg-main" href="#">Looking for More?</a>
+
+            </div>
+
+
+            <div class="content -mt-8  ">
+
+
+                <div class="photo  w-full pr-0 right-0 mr-0 flex justify-end">
+                    <img class="" src="food.png" alt="">
+                </div>
+               
+            </div>
+
+           
+
+
+           
+
+        </section>
+
+    </div>
+
+    
+</body>
+</html>
